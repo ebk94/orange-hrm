@@ -12,6 +12,7 @@ public class BaseTest
     {
         Configuration.headless = false;
         Configuration.browser = "chrome";
+        Configuration.baseUrl = "https://opensource-demo.orangehrmlive.com/";
     }
 
     @AfterAll

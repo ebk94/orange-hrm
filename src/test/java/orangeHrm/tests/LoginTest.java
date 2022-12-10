@@ -11,11 +11,12 @@ import static com.codeborne.selenide.Selenide.open;
 import com.codeborne.selenide.junit5.TextReportExtension;
 
 @ExtendWith({TextReportExtension.class})
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class LoginTest extends BaseTest
 {
 
     @BeforeEach
-    public void visitPage() { open("https://opensource-demo.orangehrmlive.com/"); }
+    public void visitPage() { open(""); }
 
     @Test
     @Order(1)
